@@ -1,9 +1,0 @@
-CREATE TABLE Customer(
-customerId NUMBER PRIMARY KEY,
-customerName VARCHAR2(20),
-dateOfBirth DATE,
-address VARCHAR2(20),
-contactNumber NUMBER(10)
-);
-
-SELECT * FROM Customer;
