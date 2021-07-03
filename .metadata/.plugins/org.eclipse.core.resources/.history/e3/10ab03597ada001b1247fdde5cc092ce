@@ -1,0 +1,41 @@
+package ui;
+
+import bean.Customer;
+import service.CustomerService;
+
+public class GaveInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void createAccount(){
+		
+		try {
+			Customer  cr_acc = new Customer();
+			cr_acc.setCustomerId(002);
+			cr_acc.setCustomerName("Shubham");
+			cr_acc.setDateOfBirth(null);
+			cr_acc.setAddress("patna");
+			cr_acc.setContactNumber("8557988735");
+			
+			CustomerService cr = new CustomerService();
+			cr.createAccount(cr_acc);
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	public static void viewDetails() {
+		
+	}
+	public static void updateAccount() {
+		
+	}
+	public static void deleteAccount() {
+		
+	}
+}

@@ -1,0 +1,25 @@
+package resources;
+
+
+
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+
+public class HibernateUtility{
+	
+	private static final String CONFIGURATION_LOCATION ="resource/hibernate.cfg.xml";
+	private static SessionFactory sessionFactory = getSessionFactory();
+	private static SessionFactory getSessionFactory() {
+		try {
+			if(sessionFactory==null) {
+				// step1:
+				Configuration configuration = new Configuration();
+				configuration.configure(CONFIGURATION_LOCATION);
+				//step2:
+				ServiceRegister serviceRegister
+			}
+		}
+	}
+}

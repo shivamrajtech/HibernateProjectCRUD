@@ -1,0 +1,25 @@
+package service;
+
+import bean.Customer;
+import dao.CustomerDAO;
+
+public class CustomerService {
+
+	public void createAccount(Customer p){
+		
+		CustomerDAO dao = new CustomerDAO();
+		dao.createAccount(p);
+		
+	}
+	public void viewDetails() {
+		
+	}
+	public void updateAccount() {
+		
+	}
+	public void deleteAccount() {
+		
+	}
+	
+	
+}

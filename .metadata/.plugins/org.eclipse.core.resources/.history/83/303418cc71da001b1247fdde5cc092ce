@@ -1,0 +1,19 @@
+package service;
+
+public class CustomerService {
+
+	public void createAccount(){
+		
+	}
+	public void viewDetails() {
+		
+	}
+	public void updateAccount() {
+		
+	}
+	public void deleteAccount() {
+		
+	}
+	
+	
+}

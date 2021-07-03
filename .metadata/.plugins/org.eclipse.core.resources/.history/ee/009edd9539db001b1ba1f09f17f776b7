@@ -1,0 +1,45 @@
+package service;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import bean.Customer;
+import dao.CustomerDAO;
+
+public class CustomerService {
+
+	public void createAccount(Customer p) throws Exception{
+		validateName(p.getCustomerName());
+		validateNumber(p.getContactNumber());
+		CustomerDAO dao = new CustomerDAO();
+		dao.createAccount(p);
+		
+	}
+	public void viewDetails() {
+		
+	}
+	public void updateAccount() {
+		
+	}
+	public void deleteAccount() {
+		
+	}
+	
+	
+	public void validateName(String name) throws Exception {
+		
+		String regex = "[A-Za-z]+\\s?[A-Za-z]+";
+		if(!name.matches(regex)) {
+			System.out.println("Invalid name");
+		}
+	}
+	
+	
+	public void validateNumber(String cont_num) {
+       Pattern number = Pattern.compile("(0|91)?[7-9][0-9]{9}");
+	   Matcher m = number.matcher(cont_num);
+       if(!m.find()&& m.group().equals(cont_num)) {
+			System.out.print("Invalid number");
+		}
+	}
+}

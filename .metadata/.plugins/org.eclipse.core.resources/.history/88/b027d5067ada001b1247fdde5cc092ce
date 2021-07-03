@@ -1,0 +1,17 @@
+package dao;
+
+public class CustomerDAO {
+	public void createAccount(){
+		
+	}
+	public void viewDetails() {
+		
+	}
+	public void updateAccount() {
+		
+	}
+	public void deleteAccount() {
+		
+	}
+
+}
